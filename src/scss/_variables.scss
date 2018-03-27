@@ -1,0 +1,28 @@
+// Font families
+@font-face {
+    font-family: 'Cutive Mono';
+    src: url(img/CutiveMono-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(img/Inconsolata-Regular.ttf);
+}
+
+// Font sizes
+
+
+// Base colors
+
+
+// Main components colors
+
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+

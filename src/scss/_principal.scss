@@ -1,0 +1,250 @@
+.hr{
+    width: 100px;
+}
+.carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+
+    & > img {
+        position: absolute;
+        visibility: hidden;
+        width: 100%;
+        min-width: 1200px;
+        top: 0;
+        right: 0;
+        transition: transform 400ms ease-in-out;
+    }
+
+    & > .circles {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 10px;
+        z-index: 2;
+
+        & > span {
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            cursor: pointer;
+
+            &:hover, &.selected {
+                background-color: white;
+            }
+        }
+    }
+}
+
+.brands{
+    margin-top: 60px;
+    & > .title{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        & > h1{
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    }
+    & > .icons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        & > img{
+            width: 120px;
+            height: 120px;
+            display: block;
+            padding: 12px;
+            cursor: pointer;
+
+        }
+    }
+}
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    max-width: 1270px;
+    margin: 30px auto;
+
+    & > .title{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+
+        & > h1{
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    }
+    
+    & > .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+
+        & > .item {
+            background-color: white;
+            border: 1px solid rgb(74, 188, 224);
+            width: 300px;
+            height: 250px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px 10px;
+            transition: opacity 200ms ease-out;
+    
+            &:hover{
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+                opacity: 0,4;
+                }
+            }
+    
+            & > .img {
+                background-color: white;
+                display: block;
+                padding-top: 30px;
+    
+                & > .material-icons {
+                    font-size: 60px;
+                    color: rgb(74, 188, 224)
+                }
+            }
+    
+            & > .description{
+                padding: 15px;
+                position: relative;
+                background-color: white;
+                & > h4 {
+                    color: rgb(74, 188, 224);
+                    font-family: Arial, Helvetica, sans-serif, monospace;
+                    text-transform: uppercase;
+                    padding-top: 44px;
+                    padding-bottom: 6px;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+    
+                & > p {
+                    color: rgb(139, 139, 139);
+                    font-family: Arial, Helvetica, sans-serif, monospace;
+                    font-size: 15px;
+                    padding-top: 9px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        @include if-tablet {
+            & > .item {
+                width: calc(33% - 16px);
+            }
+        }
+        @include if-desktop {
+            & > .item {
+                width: 230px;
+            }
+        }
+
+    }
+
+.companies{
+    margin-top: 20px;
+    & > .title{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        & > h1{
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    }
+    & > .icons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        & > img{
+            width: 120px;
+            height: 120px;
+            display: block;
+            padding: 12px;
+            cursor: pointer;
+
+        }
+    }
+}
+.professionals{
+    margin-top: 50px;
+
+    & > .title{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        & > h1{
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    }
+    & > .info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px auto;
+        & > .text{
+            color: grey;
+            width: 350px;
+            padding: 10px 30px;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+
+        }
+        & > .img{
+            width: 400px;
+            & > .item{
+                border: 1px solid rgb(74, 188, 224);
+                color: rgb(74, 188, 224);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                margin: 10px;
+
+                & > h1{
+                    font-family: Arial, Helvetica, sans-serif, monospace;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: lighter;
+                }
+
+                & > .material-icons{
+                    font-size: 30px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    max-width: 1270px;
+    margin: 30px auto;
+
+    & > .title{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+
+        & > h1{
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    }
+    
+    & > .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+
+        & > .item {
+            background-color: white;
+            border: 1px solid rgb(74, 188, 224);
+            width: 300px;
+            height: 250px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px 10px;
+    
+            &:hover{
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+                border: 1px solid rgb(197, 140, 55);
+            }
+    
+            & > .img {
+                background-color: white;
+                display: block;
+                padding-top: 20px;
+    
+                & > .material-icons {
+                    font-size: 60px;
+                    color: rgb(74, 188, 224);
+                }
+            }
+    
+            & > .description{
+                padding: 10px;
+                position: relative;
+                background-color: white;
+                & > h4 {
+                    color: rgb(74, 188, 224);
+                    font-family: Arial, Helvetica, sans-serif, monospace;
+                    text-transform: uppercase;
+                    padding-top: 44px;
+                    padding-bottom: 6px;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+    
+                & > p {
+                    color: rgb(139, 139, 139);
+                    font-family: Arial, Helvetica, sans-serif, monospace;
+                    font-size: 15px;
+                    padding-top: 9px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        @include if-tablet {
+            & > .item {
+                width: calc(33% - 16px);
+            }
+        }
+        @include if-desktop {
+            & > .item {
+                width: 230px;
+            }
+        }
+
+    }
+   
+}
