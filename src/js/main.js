@@ -1,16 +1,18 @@
 import $ from 'jquery';
-import 'flexslider';
+global.jQuery = $;
+
+require('flexslider');
 import 'cookieconsent';
 import './menu';
 
+
 window.addEventListener("load", function(){
-    /*
     $('.flexslider').flexslider({
-      animation: "fade"
+        animation: "fade"
     });
-    */
+
     cookieconsent.initialise({
-      "palette": {
+        "palette": {
             "popup": {
                 "background": "#e0e0e0",
                 "text": "#2c2c2c"
