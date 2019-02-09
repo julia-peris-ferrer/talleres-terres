@@ -1,0 +1,20 @@
+
+@import "./scss/index";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/menu";
+@import "./contact";
+@import "./index";
+@import "./legal-notice";
+@import "./services";
+@import "./workshop";
+
+.slider_container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .slides img {
+        border: none;
+    }
+}

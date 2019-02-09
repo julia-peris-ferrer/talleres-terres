@@ -1,21 +1,18 @@
 {
-  "name": "ED-1-Web",
+  "name": "talleres-terres",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Julia Peris Ferrer",
+  "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
-    "babel-core": "^6.26.0",
+    "autoprefixer": "^7.2.6",
+    "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^8.0.0",
-    "browser-sync": "^2.23.6",
-    "browserify": "^16.0.0",
+    "browser-sync": "^2.26.3",
+    "browserify": "^16.2.3",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-buffer": "0.0.2",
@@ -24,11 +21,17 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-postcss": "^7.0.1",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-tap": "^1.0.1",
-    "gulp-uglify": "^3.0.0",
-    "node-sass": "^4.7.2",
-    "posts": "0.0.1"
+    "gulp-uglify": "^3.0.1",
+    "node-sass": "^4.11.0",
+    "posts": "0.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "cookieconsent": "^3.1.0",
+    "flexslider": "^2.7.1",
+    "jquery": "^3.3.1"
   }
 }

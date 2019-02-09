@@ -1,0 +1,70 @@
+.contact {
+    margin: 20px auto;
+    max-width: 1000px;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: row;
+    padding-bottom: 50px;
+
+        & > .address {
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            background-color: white;
+            flex-grow: 1;
+            width: 100%;
+            margin: 8px 0;
+            box-sizing: border-box;
+            flex-direction: column;
+                    
+
+            h5 {
+                font-size: 20px;
+                color: rgb(74, 188, 224);
+                padding-top: 30px;
+                padding-bottom: 10px;
+                letter-spacing: 1px;
+                font-weight: lighter;
+            }
+            
+            display: flex;   
+            color: rgb(136, 136, 136);
+
+            & > div{
+                flex-grow: 1;
+            }         
+        }
+
+        & > .info {
+            font-family: Arial, Helvetica, sans-serif, monospace;
+            background-color: rgb(126, 203, 226);
+            flex-grow: 1;
+            width: 100%;
+            margin: 8px 0;
+            box-sizing: border-box;
+            flex-direction: column;
+            padding-left: 50px;
+                    
+
+            h5 {
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                padding-top: 20px;
+                padding-bottom: 10px;
+                letter-spacing: 1px;
+                font-weight: lighter;
+            }
+            
+            display: flex;   
+            color: rgb(66, 66, 66);
+
+            & > div{
+                flex-grow: 1;
+            }         
+        }
+
+        @include if-tablet {
+            & > .info > .address {
+                width: calc(50% - 16px);
+                margin: 8px;
+            }
+        }
+    }

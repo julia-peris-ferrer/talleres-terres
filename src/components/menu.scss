@@ -1,0 +1,146 @@
+.logo{
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu .logo{
+    display: block;
+    width: 270px;
+    
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none; /*Quitar la decoracion que se pone por defecto en las listas (puntos)*/
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.menu ul li {
+    display: inline-block;
+    background-color: white ;
+    margin: 12px 10px;
+    margin-bottom: 0px;
+}
+
+.menu ul li a {
+    font-family: 'open sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: rgb(78, 78, 78);
+    text-transform: uppercase; /* Texto en mayúsculas */
+    width: 110px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    transition: background-color 400ms ease-out; /* Para que haya una transicion de un color a otro */
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    font-weight: bolder;
+    color: #63a4ce;
+    border-bottom-color: #73b5e0;
+ }
+
+#menu-button {
+    padding-right: 7px;
+    display: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding-top: 12px;
+    width: 25px;
+}
+
+@media (max-width: 767px) {
+    #menu-button {
+        display: initial;
+        padding-bottom: 10px;
+    }
+    
+    .background {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+    }
+    
+    .menu {
+        display: block;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        width: 300px;
+        top: 0;
+        background-color: white;
+        height: 100%;
+        margin : 0;
+        padding: 0;
+        padding-top: 65px;
+        box-sizing: border-box;
+        transform: translateX(-300px);
+        transition: transform 200ms ease-in-out;
+    }
+    
+    .menu .logo .logo{
+        display: none;
+        width: 200px;
+        padding: 40px 0;
+    }
+    
+    .menu.shown {
+        transform: translateX(0);
+    }
+    
+    .menu ul {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        margin: 0;
+        display: block;
+        border-bottom: 1px solid #dbdbdb;
+        box-shadow: none;
+    }
+
+    .menu ul li:first-child {
+        border-top: 1px solid #dbdbdb;
+    }
+    .menu ul li:active,
+    .menu ul li:hover,
+    .menu ul li:focus {
+        background-color: rgb(44, 43, 43);
+        color: white;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        border-bottom-color: transparent;
+    }
+    .menu ul li a {
+        padding: 20px;
+        width: initial;
+        border-bottom: none;
+        text-transform: none;
+    }
+}

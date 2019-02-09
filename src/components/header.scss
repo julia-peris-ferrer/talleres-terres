@@ -1,0 +1,64 @@
+.cabecera{
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cabecera .logotipo{
+    visibility: hidden;
+}
+
+.cabecera .announcement h1{
+    color: rgb(241, 241, 241);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'open sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.cabecera .header-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+.cabecera .header-icons a img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 767px) {
+    main{
+        padding-top: 65px;
+    }
+    .cabecera{ 
+        height: 65px;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.7);
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+    }
+    .cabecera .logotipo{
+        padding-left: 10px;
+        height: 40px;
+        visibility: visible;
+    }
+    .cabecera .announcement h1{
+        display: none;
+    }
+    .cabecera .header-icons a img {
+        display: none;
+    }
+    
+    .body{  
+        margin-top: 100px;
+    }
+}

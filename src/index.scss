@@ -1,0 +1,214 @@
+.brands{
+    margin-bottom: 40px;
+    & > .title{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        & > h1{
+            color: #73b5e0;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            font-size: 35px;
+        }
+    }
+    & > .icons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        & > img{
+            width: 130px;
+            height: 130px;
+            display: block;
+            padding: 15 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .brands .title{
+        margin-top: 10px;
+    }
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    align-items: stretch;
+
+    & > .content {
+        display: flex;
+        flex-direction: row;
+        margin: 10 30px;
+        margin-bottom: 5px;
+        min-height: 400px;
+
+        & > * {
+            flex-grow: 1; 
+        }
+        & > .image {
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        & > .info {
+            background-color: gainsboro;
+            padding: 30 60px;
+            box-sizing: border-box;
+            font-family: 'open sans', sans-serif;
+            font-weight: lighter;
+
+            & > h2 {
+                color:  #555555;
+                text-transform: uppercase;
+                font-family: 'Oswald', sans-serif;
+                padding-bottom: 30px;
+                font-size: 35px;
+            }
+            & > p {
+                font-family: 'open sans', sans-serif;
+                font-weight: lighter;
+                letter-spacing: 1px;
+                color: rgb(44, 43, 43);
+                line-height: 30px;
+                font-size: 15px;
+                padding-bottom: 5px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .datos .content{
+        flex-direction: column;
+        margin: auto;
+    }
+    .datos .content .image {
+        height: 300px;
+    }
+    .datos .content .info h2 {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    .datos .content .info p {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .datos .content .info {
+        padding: 30 50px;
+    }
+}
+@media (min-width: 768px) { 
+    .datos .content:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .datos .content .image {
+        width: 50%;
+    }
+    .datos .content .info {
+        width: 50%;
+    }
+}
+
+.professionals{
+    margin-top: 50px;
+}
+
+.professionals .title{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.professionals .title h1{
+    color: #73b5e0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 0;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.professionals .info{
+    font-family: 'open sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px auto;
+    margin-bottom: 70px;
+}
+
+.professionals .info .text{
+    color: grey;
+    width: 380px;
+    padding: 10px 50px;
+    line-height: 30px;
+}
+
+.professionals .info .img{
+    width: 380px;
+    padding: 10px 50px;
+}
+
+.professionals .info .img .item{
+    border: 1px solid #73b5e0;
+    color: rgb(74, 188, 224);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.professionals .info .img .item h1{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #73b5e0;
+}
+
+.professionals .info .img .item .material-icons{
+    font-size: 30px;
+    margin-right: 22px;
+    color: #73b5e0;
+}
+
+@media (max-width: 767px) {
+    .brands .title h1{
+        font-size: 20px;
+    }
+    .brands .icons img{
+        width: 90px;
+        height: 90px;
+    }
+    .professionals .title h1{
+        font-size: 25px;
+        padding-bottom: 0;
+    }
+    .professionals .info .text{
+        font-size: 14px;
+        padding: 0 50px;
+    }
+    
+    .professionals .info .text p{
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .professionals .info .img .item h1{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .professionals .info .img .item .material-icons{
+        font-size: 20px;
+         text-align: center;
+    }
+}
