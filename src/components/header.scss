@@ -5,8 +5,8 @@
     align-items: center;
 }
 
-.cabecera .logotipo{
-    visibility: hidden;
+.cabecera .logo{
+    display: none;
 }
 
 .cabecera .announcement h1{
@@ -46,10 +46,13 @@
         z-index: 9;
         width: 100%;
     }
-    .cabecera .logotipo{
-        padding-left: 10px;
-        height: 40px;
-        visibility: visible;
+    .cabecera > .logo {
+        display: block;
+
+        & > img {
+            padding-left: 10px;
+            height: 40px;
+        }
     }
     .cabecera .announcement h1{
         display: none;

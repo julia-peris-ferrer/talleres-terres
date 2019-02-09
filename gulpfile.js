@@ -46,12 +46,6 @@ gulp.task("html", function(){
         .pipe(browserSync.stream());
 });
 
-gulp.task("img", function(){
-    return gulp.src("src/img/*") 
-        .pipe(imagemin())
-        .pipe(gulp.dest("dist/img/"))
-});
-
 gulp.task("js", function(){
     return browserify({entries: './src/js/main.js', debug: true})
         .transform("babelify", {presets: ["es2015"]})
@@ -64,3 +58,16 @@ gulp.task("js", function(){
         .pipe(gulp.dest("dist/"))
         .pipe(browserSync.stream());
 });
+
+gulp.task("img", function(){
+    return gulp.src("src/img/*") 
+        .pipe(imagemin())
+        .pipe(gulp.dest("dist/img/"))
+});
+
+gulp.task("fonts", function(){
+    return gulp.src("node_modules/flexslider/fonts/*") 
+        .pipe(gulp.dest("dist/fonts"))
+});
+
+gulp.task("statics", ["img", "fonts"]);

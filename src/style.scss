@@ -1,13 +1,22 @@
 
-@import "./scss/index";
-@import "./components/footer";
-@import "./components/header";
-@import "./components/menu";
-@import "./contact";
-@import "./index";
-@import "./legal-notice";
-@import "./services";
-@import "./workshop";
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(img/MaterialIcons-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url(img/Oswald-regular.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(img/Inconsolata-Regular.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Cultive Mono';
+    src: url(img/CutiveMono-Regular.ttf) format('opentype');
+}
 
 .slider_container{
     width: 100%;
@@ -17,4 +26,18 @@
     .slides img {
         border: none;
     }
+    .flex-direction-nav a:before {
+        color: white;
+    }
 }
+
+@import "./scss/index";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/menu";
+@import "./contact";
+@import "./index";
+@import "./legal-notice";
+@import "./services";
+@import "./workshop";
+@import "../node_modules/flexslider/flexslider";
