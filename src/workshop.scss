@@ -34,7 +34,7 @@
                     }
                     & > h1{
                         color: rgb(121, 121, 121);
-                        font-size: 14px;
+                        font-size: 15px;
                         text-align: center;
                         font-family: 'open sans', sans-serif;
                         font-weight: lighter;
@@ -56,13 +56,15 @@
                 font-weight: lighter;
                 letter-spacing: 1px;
                 line-height: 30px;
-                font-size: 14px;
+                font-size: 15px;
                 color: rgb(121, 121, 121);
                 padding-bottom: 30px;
-                text-align: center;
+                text-align: left;
+                padding: 0 10px;
+                padding-bottom: 30px;
 
                 &:last-child{
-                    padding-bottom: 0;
+                    padding-bottom: 20px;
             
                 }
             }
@@ -138,10 +140,12 @@
             padding: 30px;
 
             & > h4 {
-                font-size: 35;
+                font-size: 35px;
+                padding-top: 20px;
             }
             & > p {
                 font-size: 16px;
+                text-align: center;
             }
             .work > .item {
                 flex-direction: column;

@@ -53,7 +53,7 @@
 
 .menu ul li a:hover{
     font-weight: bolder;
-    color: #63a4ce;
+    color: #73b5e0;
     border-bottom-color: #73b5e0;
  }
 
@@ -64,6 +64,10 @@
     color: #ffffff;
     padding-top: 12px;
     width: 25px;
+}
+
+.menu .social-networks{
+    display: none;
 }
 
 @media (max-width: 767px) {
@@ -141,5 +145,17 @@
         border-bottom: none;
         text-transform: none;
         text-align: left;
+    }
+    .menu .social-networks{
+        display: block;
+        padding-left: 67px;
+        padding-top: 20px;
+        a{
+            padding-right: 10px;
+
+            img:hover{
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
     }
 }
