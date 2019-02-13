@@ -152,9 +152,10 @@
         padding-top: 20px;
         a{
             padding-right: 10px;
+            transition: opacity 250ms ease-in-out;
 
-            img:hover{
-                background-color: rgba(0, 0, 0, 0.7);
+            &:hover {
+                opacity: 0.5;
             }
         }
     }

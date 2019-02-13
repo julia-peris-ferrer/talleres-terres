@@ -24,9 +24,10 @@ footer {
             padding-top: 10px;
             a{
                 padding-right: 10px;
-    
-                img:hover{
-                    background-color: rgba(0, 0, 0, 0.7);
+                transition: opacity 250ms ease-in-out;
+
+                &:hover {
+                    opacity: 0.5;
                 }
             }
         }
