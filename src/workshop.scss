@@ -1,172 +1,157 @@
-.workshop{
-    & > .us{
-        margin: 20px auto;
-        max-width: 950px;
+.workshop > .us{
+    margin: 20px auto;
+    max-width: 950px;
+    padding: 0px 20px;
+    & > h4 {
+        color: #73b5e0;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    & > p {
+        font-family: 'open sans', sans-serif;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        line-height: 30px;
+        color: rgb(121, 121, 121);
+        padding-bottom: 30px;
+        text-align: left;
+        padding: 0 10px;
+        padding-bottom: 30px;
 
-        .about-us {
+        &:last-child{
+            padding-bottom: 20px;
+        }
+    }
+    & > .work {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        & > .item {
+            display: flex;
+            align-items: center;
+            color: rgb(74, 188, 224);
+            border: 1px solid #73b5e0;
+            width: 100%;
+            height: 70px;
+            margin: 10px;
+            padding: 15px;
+
+            & > * {
+                padding: 15px;
+            }
+            & > .material-icons {
+                text-align: center;
+                font-size: 30px;
+                color: #73b5e0;
+            }
+            & > h1{
+                color: rgb(121, 121, 121);
+                font-size: 15px;
+                text-align: center;
+                font-family: 'open sans', sans-serif;
+                font-weight: lighter;
+            }
+        }
+    }
+    & > .workers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        max-width: 1270px;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        .item {
             background-color: white;
-            padding: 0px 20px;
-            padding-bottom: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            width: 100%;
+            position: relative;
 
-            & > .work {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-bottom: 50px;
+            & > .img {
+                background-color: white;
+                width: 100%;
+                display: block;
 
-                & > .item {
-                    display: flex;
-                    align-items: center;
-                    color: rgb(74, 188, 224);
-                    border: 1px solid #73b5e0;
+                & > img {
                     width: 100%;
-                    height: 70px;
-                    margin: 10px;
-                    padding: 15px;
-
-                    & > * {
-                        padding: 15px;
-                    }
-                    & > .material-icons {
-                        text-align: center;
-                        font-size: 30px;
-                        color: #73b5e0;
-                    }
-                    & > h1{
-                        color: rgb(121, 121, 121);
-                        font-size: 15px;
-                        text-align: center;
-                        font-family: 'open sans', sans-serif;
-                        font-weight: lighter;
-                    }
+                    transition: opacity 500ms ease-out 100ms;
+                }
+                & > .detail {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
                 }
             }
-            & > h4 {
-                color: #73b5e0;
-                text-transform: uppercase;
-                font-family: 'Oswald', sans-serif;
-                text-align: center;
-                padding-bottom: 10px;
-                margin-top: 18px;
-                margin-bottom: 20px;
-                font-size: 25px;
-            }
-            & > p {
+            & > .description{
                 font-family: 'open sans', sans-serif;
                 font-weight: lighter;
                 letter-spacing: 0.5px;
-                font-size: 15px;
-                line-height: 30px;
-                color: rgb(121, 121, 121);
-                padding-bottom: 30px;
-                text-align: left;
-                padding: 0 10px;
-                padding-bottom: 30px;
-
-                &:last-child{
-                    padding-bottom: 20px;
-            
-                }
-            }
-        }
-        & > .workers {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 8px;
-            text-align: center;
-            max-width: 1270px;
-            margin: 10px auto;
-
-            .item {
-                background-color: white;
-                border: 1px solid rgb(255, 255, 255);
-                width: 100%;
-                padding: 10px;
+                font-size: 14px;
+                padding: 0 30px;
                 position: relative;
-                margin: 10px 10px;
+                background-color: white;
+                padding-bottom: 30px;
 
-                & > .img {
-                    background-color: white;
-                    width: 100%;
-                    display: block;
-
-                    & > img {
-                        width: 100%;
-                        transition: opacity 500ms ease-out 100ms;
-                    }
-                    & > .detail {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        opacity: 0;
-                    }
+                & > h4 {
+                    color: #73b5e0;
+                    font-weight: normal;
+                    padding-top: 25px;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-bottom: 10px;
                 }
-                & > .description{
-                    font-family: 'open sans', sans-serif;
-                    font-weight: lighter;
-                    letter-spacing: 0.5px;
-                    font-size: 14px;
-                    padding: 0 30px;
-                    position: relative;
-                    background-color: white;
-                    padding-bottom: 30px;
-
-                    & > h4 {
-                        color: #73b5e0;
-                        font-weight: normal;
-                        padding-top: 25px;
-                        font-size: 16px;
-                        letter-spacing: 1px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        margin-bottom: 10px;
-                    }
-                    & > p {
-                        color: rgb(139, 139, 139);
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        margin: 0;
-                    }
+                & > p {
+                    color: rgb(139, 139, 139);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin: 0;
                 }
             }
         }
     }
+
     @media (min-width: 767px) {
-        .us .about-us {
-            padding: 30px;
+        padding: 30px;
 
-            & > h4 {
-                font-size: 35px;
-                padding-top: 20px;
-            }
-            & > p {
-                text-align: center;
-            }
-            .work > .item {
-                flex-direction: column;
-                width: calc(33% - 16px);
-                width: 240px;
-                height: 190px;
+        & > h4 {
+            font-size: 35px;
+            padding-top: 20px;
+        }
+        & > p {
+            text-align: center;
+        }
+        .work > .item {
+            flex-direction: column;
+            width: calc(33% - 16px);
+            width: 240px;
+            height: 190px;
+            padding: 15px;
+            box-sizing: border-box;
+
+            & > * {
                 padding: 15px;
-                box-sizing: border-box;
-    
-                & > * {
-                    padding: 15px;
-                }
-                & > .material-icons {
-                    font-size: 50px;
-                }
-                & > h1 {
-                }
+            }
+            & > .material-icons {
+                font-size: 50px;
             }
         }
-    }
-    @media (min-width: 1024px) {
-        .us .workers > .item {
+        .workers > .item {
             width: 230px;
+            padding: 20px;
         }
     }
 }

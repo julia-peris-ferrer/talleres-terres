@@ -2,7 +2,7 @@ import $ from 'jquery';
 global.jQuery = $;
 
 require('flexslider');
-import 'cookieconsent';
+//import 'cookieconsent';
 
 window.addEventListener("load", function(){
     var menu=document.querySelector(".menu");
@@ -22,7 +22,7 @@ window.addEventListener("load", function(){
         animation: "fade"
     });
 
-    cookieconsent.initialise({
+    /*cookieconsent.initialise({
         "palette": {
             "popup": {
                 "background": "#e0e0e0",
@@ -39,5 +39,5 @@ window.addEventListener("load", function(){
             "dismiss": "Aceptar",
             "link": "Más información"
         }
-    })
+    });*/
 });

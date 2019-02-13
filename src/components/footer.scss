@@ -46,6 +46,9 @@ footer {
                 text-decoration: none;
                 padding-bottom: 10px;
                 font-size: 13px;
+                font-family: 'open sans', sans-serif;
+                font-weight: lighter;
+                letter-spacing: 0.5px;
 
                 &:hover {
                     color: rgba(88, 88, 88, 0.979);
@@ -72,6 +75,7 @@ footer {
             color:  #e3e3e3;
             font-family: 'open sans', sans-serif;
             font-weight: lighter;
+            letter-spacing: 0.5px;
             margin: 0;
         }
     }

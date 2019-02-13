@@ -33,8 +33,7 @@
     cursor: pointer;
 }
 
-
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     main{
         padding-top: 65px;
     }
@@ -60,8 +59,7 @@
     .cabecera .header-icons a img {
         display: none;
     }
-    
-    .body{  
+    .body {  
         margin-top: 100px;
     }
 }
