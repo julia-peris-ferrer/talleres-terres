@@ -70,4 +70,9 @@ gulp.task("fonts", function(){
         .pipe(gulp.dest("dist/fonts"))
 });
 
+gulp.task("files", function(){
+    return gulp.src("src/sitemap.xml") 
+        .pipe(gulp.dest("dist"))
+});
+
 gulp.task("statics", ["img", "fonts"]);
